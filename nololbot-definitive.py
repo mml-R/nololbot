@@ -4,7 +4,7 @@ from telegram import Update
 import json
 import os
 
-TOKEN = "8128083225:AAE5fFfZGAbllNd0c2vcx3oURBQDLJgq5P4"
+TOKEN = os.environ.get("TOKEN")
 
 #متغیر سراری برای سوالات
 global_question = None
