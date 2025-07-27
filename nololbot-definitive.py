@@ -3,7 +3,7 @@ import random
 from telegram import Update
 import json
 import os
-
+from keep_alive import keep_alive
 TOKEN = os.environ.get("TOKEN")
 
 #متغیر سراری برای سوالات
@@ -261,4 +261,5 @@ def main():
     updater.idle()
 
 if __name__ == "__main__":
+    keep_alive()
     main()
